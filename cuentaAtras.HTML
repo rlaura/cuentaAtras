@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuenta Atrás</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+<div id="container">
+	<h1>Cuenta regresiva</h1>
+	<div>
+		<p>Ingresá la cantidad segundos para iniciar la cuenta regresiva</p>
+		<input type="number" name="cuentaAtras" min="1" max="999" id="cuentaAtras"> 
+		<button id="btn" onclick="iniciar()">Iniciar</button>
+	</div>
+	<div id="counter">
+		0
+	</div>
+
+	<button id="reset" onclick="reset()">Reset</button>
+</div>
+
+<div id="alert" class="cubierta">
+	<button class="cerrar" onclick="cerrar()">X</button>
+
+	<p id="texto-alert"></p>
+
+</div>
+<footer>
+	<a href="https://github.com/rlaura/" target="_blank">
+	   <img src="img/github.png"></a>
+
+	<a href="https://www.linkedin.com/in/laurarivero/" target="_blank">
+		<img src="img/linkedin.png">
+	</a>
+</footer>
+<audio id="alarma">
+  <source src="mp3/alarma.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script type="text/javascript" src="js/control.js"></script>
+</body>
+</html>
